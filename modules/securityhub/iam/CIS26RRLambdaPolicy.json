@@ -1,0 +1,55 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1649251473620",
+        "Action": [
+          "cloudwatch:PutMetricData"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649251584730",
+        "Action": [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649274435439",
+        "Action": [
+          "securityhub:UpdateFindings"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649280198598",
+        "Action": [
+          "ssm:StartAutomationExecution"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649280235733",
+        "Action": [
+          "s3:PutBucketLogging"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649280262652",
+        "Action": [
+          "iam:PassRole"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+  }

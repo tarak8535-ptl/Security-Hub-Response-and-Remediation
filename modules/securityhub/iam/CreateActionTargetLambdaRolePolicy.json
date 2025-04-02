@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "",
+        "Action": [
+          "cloudwatch:PutMetricData"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "",
+        "Action": [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "",
+        "Action": [
+          "securityhub:CreateActionTarget",
+          "securityhub:DeleteActionTarget"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+  }

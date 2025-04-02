@@ -1,0 +1,67 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1649251473620",
+        "Action": [
+          "cloudwatch:PutMetricData"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649251584730",
+        "Action": [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649265652535",
+        "Action": [
+          "iam:UpdateAccountPasswordPolicy"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649274319776",
+        "Action": [
+          "ssm:StartAutomationExecution"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649274381649",
+        "Action": [
+          "s3:GetBucketAcl",
+          "s3:GetBucketPolicy",
+          "s3:PutBucketAcl",
+          "s3:PutBucketPolicy",
+          "s3:PutBucketPublicAccessBlock"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649274407599",
+        "Action": [
+          "iam:PassRole"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1649274435439",
+        "Action": [
+          "securityhub:UpdateFindings"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+  }

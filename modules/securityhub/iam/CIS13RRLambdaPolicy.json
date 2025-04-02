@@ -1,0 +1,40 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1649251473620",
+      "Action": [
+        "cloudwatch:PutMetricData"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1649251584730",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1649260402689",
+      "Action": [
+        "iam:ListAccessKeys",
+        "iam:UpdateAccessKey"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1649260426454",
+      "Action": [
+        "securityhub:UpdateFindings"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
